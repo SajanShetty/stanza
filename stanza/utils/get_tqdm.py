@@ -31,9 +31,9 @@ def get_tqdm():
         from tqdm import tqdm
         return tqdm
 
-    if sys.stderr is not None and sys.stderr.isatty():
-        from tqdm import tqdm
-        return tqdm
+    # if sys.stderr is not None and sys.stderr.isatty():
+    #     from tqdm import tqdm
+    #     return tqdm
 
     from tqdm import tqdm
     def hidden_tqdm(*args, **kwargs):
